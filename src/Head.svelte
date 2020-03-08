@@ -1,0 +1,21 @@
+<script>
+  export let meta;
+  const content = {
+    title: `自我介紹 - ${meta.name}`,
+    name: meta.name,
+    description: meta.brief,
+    image: meta.avatar,
+    'og:title': `自我介紹 - ${meta.name}`,
+    'og:name': meta.name,
+    'og:description': meta.brief,
+    'og:image': meta.avatar,
+    'og:url': 'https://me.kalan.dev',
+    type: 'website'
+  };
+</script>
+
+<svelte:head>
+  {#each Object.keys(content) as m (m)}
+    <meta property={m} content={content[m]} />
+  {/each}
+</svelte:head>

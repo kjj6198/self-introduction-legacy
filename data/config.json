@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "name": "愷開（Kalan）",
+    "tag": "棄之可惜的 工程師",
+    "brief": "Software Engineer / 25 歲 / 台灣人 / 福岡 / 動物森友會 / 八百屋 / 男 / 1111",
+    "avatar": "https://dnf7fm7877tpg.cloudfront.net/images/ojxXTUno8GiGUws1rP8a1Z.jpg",
+    "links": {
+      "twitter": "https://twitter.com/kalanyei",
+      "blog": "https://blog.kalan.dev",
+      "medium": "https://medium.com/@kalanyei",
+      "github": "https://github.com/kjj6198"
+    }
+  },
+  "name": "愷開（Kalan）",
+  "tag": "棄之可惜的 工程師",
+  "brief": "Software Engineer / 25 歲 / 台灣人 / 福岡 / 動物森友會 / 八百屋 / 男 / 1111",
+  "content": {
+    "taiwan": "taiwan.md",
+    "intro": "intro.md",
+    "personality": "personality.md",
+    "value": "value.md",
+    "bomb": "bomb.md",
+    "favorite": "favorite.md",
+    "goal": "goal.md",
+    "achievement": "achievement.md",
+    "yaoya": "yaoya.md",
+    "japanese2": "japanese.md",
+    "what-i-am-doing": "what-i-am-doing.md",
+    "tech": "tech.md",
+    "youtube": "youtube.md",
+    "my-youtube": "my-youtube.md"
+  },
+  "favorite": {
+    "travel": {
+      "cover": "https://dnf7fm7877tpg.cloudfront.net/images/3HT5YAQSrivCcS7zhTXYxB.jpg",
+      "title": "旅行",
+      "content": "目前只專注在玩日本，歐洲機票相對貴上許多。比起城市更喜歡鄉下，遠離喧囂；但也不討厭大都市。喜歡的地方：谷根千、尾道、大村灣、美山、伊根。",
+      "meta": {
+        "images": [
+          "https://dnf7fm7877tpg.cloudfront.net/images/sVhp36BQR2mtapNMBxGZgE.jpg",
+          "https://dnf7fm7877tpg.cloudfront.net/images/jdCc1YDR44Fgf9jpjzUSsq.jpg",
+          "https://dnf7fm7877tpg.cloudfront.net/images/mHBE1M45vp494exLeozv7E.jpg",
+          "https://dnf7fm7877tpg.cloudfront.net/images/nxyoKz4saJTaXmLGAqaLoM.jpg",
+          "https://dnf7fm7877tpg.cloudfront.net/images/ecVx8XkPnZgF9qhgcEG4JV.jpg",
+          "https://dnf7fm7877tpg.cloudfront.net/images/s7XsZp1GnWn2W1Wt3AdU13.jpg",
+          "https://dnf7fm7877tpg.cloudfront.net/images/dHgbQNBXcySEeeWr4jrE3b.jpg",
+          "https://dnf7fm7877tpg.cloudfront.net/images/j3oGMuvnVFijYhkyHoNtXZ.jpg",
+          "https://dnf7fm7877tpg.cloudfront.net/images/aAsihf9Mw3P5ZD3GsGiifH.jpg",
+          "https://dnf7fm7877tpg.cloudfront.net/images/oCvz9E1W8v91ArTHox5wWr.jpg"
+        ]
+      }
+    },
+    "cook": {
+      "cover": "https://dnf7fm7877tpg.cloudfront.net/images/kwvb7s2BMov67vWS22HxHw.jpg",
+      "file": "cook.md",
+      "title": "料理",
+      "content": "喜歡做各式各樣的料理。目前做的比較特別的料理有東坡肉、煎魚、西班牙海鮮燉飯、可樂餅、布丁等",
+      "meta": {
+        "images": [
+          {
+            "src": "https://dnf7fm7877tpg.cloudfront.net/images/pQSmpXcgG4vaySNWFRNJTt.jpg",
+            "title": "可樂餅"
+          },
+          {
+            "src": "https://dnf7fm7877tpg.cloudfront.net/images/NCt6uT2oKEn6LfKXYzQQx.jpg",
+            "title": "燒肉"
+          },
+          {
+            "src": "https://dnf7fm7877tpg.cloudfront.net/images/ey5brxvsp1Yg33P3zNJY5F.jpg",
+            "title": "牛肉麵"
+          },
+          {
+            "src": "https://dnf7fm7877tpg.cloudfront.net/images/7YcEn3ih2bMKBKc3rzwJTG.jpg",
+            "title": "清蒸鯛魚"
+          },
+          {
+            "src": "https://dnf7fm7877tpg.cloudfront.net/images/kwvb7s2BMov67vWS22HxHw.jpg",
+            "title": "控肉飯"
+          }
+        ]
+      }
+    },
+    "japanese": {
+      "cover": "https://dnf7fm7877tpg.cloudfront.net/images/fjUTrsvUkJVvH4AQmD4ULp.jpg",
+      "title": "日文 / 日本文化",
+      "content": "靠著自學拿到 JLPT N1；對日本 / 日本文化有興趣，所以成立了 <a href=\"https://medium.com/日語八百屋\">日語八百屋</a>",
+      "type": "anchor",
+      "anchor": "yaoya"
+    },
+    "music": {
+      "cover": "https://dnf7fm7877tpg.cloudfront.net/images/fMNFgYwq25G28hTJ6DdFif.jpg",
+      "file": "music.md",
+      "title": "音樂",
+      "content": "喜歡音樂。學過幾年鋼琴跟吉他，但是只會看譜，樂理完全不行。最近嘗試加強樂理，手邊有一台 Roland FA-07。喜歡唱歌但是唱得普普"
+    },
+    "mystery": {
+      "cover": "https://dnf7fm7877tpg.cloudfront.net/images/iKvbwQY53zboUnKfa8Dban.jpg",
+      "file": "mystery.md",
+      "title": "推理小說（日本為主）",
+      "content": "喜歡看日本的推理小說，目前喜歡的作家有東野圭吾、伊坂幸太郎、米澤穗信、石田衣良等等",
+      "detail": ""
+    },
+    "game": {
+      "cover": "https://dnf7fm7877tpg.cloudfront.net/images/fB3qt7QMc9utk4uqv5p9f9.jpg",
+      "title": "遊戲",
+      "content": "不限平台，只要有趣就會想要玩玩看；不玩 LOL / 爐石傳說 / 第一人稱射擊遊戲；喜歡開放世界 / platformer 類型",
+      "file": "game.md"
+    },
+    "coffee": {
+      "cover": "https://dnf7fm7877tpg.cloudfront.net/images/qk2Atf1tMnCWY5H73CSeZ7.jpg",
+      "type": "normal",
+      "title": "咖啡",
+      "content": "喜歡酸得要命的手沖，越酸越好。喜歡<strong>耶加雪菲</strong>水洗豆。一般的拿鐵跟黑咖啡也可以，還有<strong>西西里</strong>咖啡。"
+    }
+  }
+}

@@ -1,9 +1,10 @@
 import App from './App.svelte';
 
 const app = new App({
-  target: document.body,
+  target: document.querySelector('#app'),
+  hydrate: true,
   props: {
-    name: 'world',
+    config: window.__DATA__,
   },
 });
 
