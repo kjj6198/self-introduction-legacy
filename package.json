@@ -26,8 +26,10 @@
     "svelte": "^3.21.0"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "ejs": "^3.1.2",
     "jsdom": "^16.2.2",
+    "pg": "^8.0.3",
     "showdown": "^1.9.1",
     "sirv-cli": "^0.4.4",
     "smooth-scroll": "^16.1.3"
