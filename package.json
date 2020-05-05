@@ -2,9 +2,9 @@
   "name": "kalan-self-introduction",
   "version": "1.0.0",
   "scripts": {
-    "build": "rollup -c",
+    "build": "node script.js && rollup -c",
     "dev": "rollup -c -w",
-    "start": "node script.js && sirv public"
+    "start": "sirv public"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.0",
