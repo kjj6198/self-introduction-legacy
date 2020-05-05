@@ -64,6 +64,15 @@
     .container {
       width: 98%;
     }
+
+    html,
+    body {
+      font-size: 14px;
+    }
+
+    main {
+      padding: 13px;
+    }
   }
 
   .overlay {
@@ -77,19 +86,6 @@
     background-color: #aaa;
   }
 </style>
-
-<Head meta={config.meta} />
-
-<Hero
-  ids={Object.keys(config.content).map((k) => ({
-    id: config.content[k].id,
-    title: config.content[k].title
-  }))}
-  links={config.meta.links}
-  name={config.meta.name}
-  tag={config.meta.tag}
-  brief={config.meta.brief}
-  avatar={config.meta.avatar} />
 
 <svelte:body
   class:overlay={$modal.isOpen}
@@ -106,6 +102,20 @@
       running = true;
     }
   }} />
+
+<Head meta={config.meta} />
+
+<Hero
+  ids={Object.keys(config.content).map((k) => ({
+    id: config.content[k].id,
+    title: config.content[k].title
+  }))}
+  links={config.meta.links}
+  name={config.meta.name}
+  tag={config.meta.tag}
+  brief={config.meta.brief}
+  avatar={config.meta.avatar} />
+
 <main>
   <div class="container">
     {#each Object.values(config.content).filter((c) => !!c.id) as c (c.id)}
@@ -121,6 +131,17 @@
   </div>
 
 </main>
+
+<Hero
+  ids={Object.keys(config.content).map((k) => ({
+    id: config.content[k].id,
+    title: config.content[k].title
+  }))}
+  links={config.meta.links}
+  name={config.meta.name}
+  tag={config.meta.tag}
+  brief={config.meta.brief}
+  avatar={config.meta.avatar} />
 
 <Transition {x} {y} {running} on:complete={() => (running = false)} />
 

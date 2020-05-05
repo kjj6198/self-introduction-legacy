@@ -66,16 +66,6 @@
     margin-bottom: 10px;
   }
 
-  @media (max-width: 680px) {
-    li {
-      width: 50%;
-    }
-
-    section {
-      padding: 15px;
-    }
-  }
-
   li::before {
     display: inline-block;
     content: attr(data-num);
@@ -121,9 +111,27 @@
     margin: 4em;
   }
 
+  :global(ul) {
+    padding-left: 15px;
+  }
+
   :global(.youtube) {
     width: 100%;
     height: 500px;
+  }
+
+  @media (max-width: 680px) {
+    li {
+      width: 50%;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    :global(ul) {
+      padding-left: 20px;
+    }
   }
 </style>
 

@@ -70,7 +70,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
+    padding: 40px 10px;
     width: 100%;
     height: 100vh;
     color: #fff;
@@ -146,6 +146,15 @@
     .table-of-content > li {
       width: 50%;
       margin-bottom: 10px;
+    }
+
+    header {
+      height: auto;
+      max-height: auto;
+    }
+
+    p {
+      font-size: 14px;
     }
   }
 </style>

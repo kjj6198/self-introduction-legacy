@@ -8,6 +8,7 @@
   let stopped = true;
   let selected = '';
 
+  let translateX = 0;
   function handleCardClick(item) {
     open(item.title, item);
   }
