@@ -1,7 +1,10 @@
 <script>
+  import { onMount } from 'svelte';
   import { open } from './stores/modal';
-
-  let faq = fetch('/api/qna').then((res) => res.json());
+  let faq;
+  onMount(() => {
+    faq = fetch('/api/qna').then((res) => res.json());
+  });
 </script>
 
 <style>
