@@ -46,7 +46,8 @@
   }
 
   :global(.overlay) {
-    overflow-y: hidden;
+    overflow: hidden;
+    height: 100%;
   }
 
   main {
