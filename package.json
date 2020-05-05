@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "node script.js && rollup -c",
-    "dev": "rollup -c -w",
-    "start": "sirv public"
+    "dev": "PORT=5000 rollup -c -w",
+    "start": "sirv public --single --dev --port 3000"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.0",
@@ -26,9 +26,11 @@
     "svelte": "^3.21.0"
   },
   "dependencies": {
+    "@now/node": "^1.5.1",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.2",
     "jsdom": "^16.2.2",
+    "mongoose": "^5.9.12",
     "pg": "^8.0.3",
     "showdown": "^1.9.1",
     "sirv-cli": "^0.4.4",

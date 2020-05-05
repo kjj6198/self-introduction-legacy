@@ -9,7 +9,9 @@
   import Modal from './Modal.svelte';
   import TravelModal from './TravelModal.svelte';
   import MusicModal from './MusicModal.svelte';
+  import FAQModal from './FAQModal.svelte';
   import Transition from './Transition.svelte';
+  import FAQ from './FAQ.svelte';
 
   export let config;
 
@@ -129,6 +131,10 @@
         <Section id={c.id} title={c.title} content={c.content} meta={c.meta} />
       {/if}
     {/each}
+
+    <Section id="faq" title="FAQ">
+      <FAQ />
+    </Section>
   </div>
 
 </main>
@@ -152,6 +158,8 @@
       <TravelModal meta={$modal.params} />
     {:else if $modal.name === '音樂' || $modal.name === '遊戲' || $modal.name === '推理小說（日本為主）'}
       <MusicModal meta={$modal.params} />
+    {:else if $modal.name === 'faq'}
+      <FAQModal />
     {/if}
   </Modal>
   <div class="overlay" transition:fade on:click={close} />
