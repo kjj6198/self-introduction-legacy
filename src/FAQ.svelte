@@ -53,32 +53,34 @@
 </style>
 
 <div>
-  {#await faq}
-    loading
-  {:then data}
-    <div class="btn-wrapper">
-      <button type="button" on:click={() => open('faq', {})}>
-        我也要發問！
-      </button>
-    </div>
-    <div class="container">
-      {#each data as d (d._id)}
-        <div class="comment">
-          <div class="header">
-            <img src="/user.png" alt="user image" />
-            <h3>{d.name || '匿名'}</h3>
-            <time datetime={d.createdAt}>
-              {new Date(d.createdAt).toLocaleDateString()}
-            </time>
+  {#if faq}
+    {#await faq}
+      loading
+    {:then data}
+      <div class="btn-wrapper">
+        <button type="button" on:click={() => open('faq', {})}>
+          我也要發問！
+        </button>
+      </div>
+      <div class="container">
+        {#each data as d (d._id)}
+          <div class="comment">
+            <div class="header">
+              <img src="/user.png" alt="user image" />
+              <h3>{d.name || '匿名'}</h3>
+              <time datetime={d.createdAt}>
+                {new Date(d.createdAt).toLocaleDateString()}
+              </time>
+            </div>
+            <p>{d.question}</p>
+            <p>{d.reply}</p>
           </div>
-          <p>{d.question}</p>
-          <p>{d.reply}</p>
-        </div>
-      {/each}
-    </div>
-  {:catch error}
-    <div>
-      <p>系統忙碌中...</p>
-    </div>
-  {/await}
+        {/each}
+      </div>
+    {:catch error}
+      <div>
+        <p>系統忙碌中...</p>
+      </div>
+    {/await}
+  {/if}
 </div>
