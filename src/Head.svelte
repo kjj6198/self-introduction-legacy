@@ -5,6 +5,8 @@
     name: meta.name,
     description: meta.brief,
     image: meta.avatar,
+    'twitter:creator': '@kalanyei',
+    'twitter:card': 'summary',
     'og:title': `自我介紹 - ${meta.name}`,
     'og:name': meta.name,
     'og:description': meta.brief,
