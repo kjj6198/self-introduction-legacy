@@ -1,11 +1,13 @@
 <script>
   import { onMount } from 'svelte';
   import { linear } from 'svelte/easing';
+  import { intersection } from './intersection';
   export let name;
   export let tag;
   export let brief;
   export let avatar;
   export let links;
+  export let ids;
 
   let canvas;
   let angle = 0;
@@ -36,17 +38,17 @@
     move();
   }
 
-  // onMount(() => {
-  //   timer = setInterval(() => {
-  //     animate((p) => {
-  //       angle = p;
-  //     });
-  //   }, 5000);
+  onMount(() => {
+    timer = setInterval(() => {
+      animate((p) => {
+        angle = p;
+      });
+    }, 5000);
 
-  //   animate((p) => {
-  //     angle = p;
-  //   });
-  // });
+    animate((p) => {
+      angle = p;
+    });
+  });
 </script>
 
 <style>
@@ -75,13 +77,10 @@
     background-color: var(--top-background);
   }
 
-  img {
+  .avatar {
     display: block;
     margin: auto;
     max-width: 100%;
-  }
-
-  .avatar {
     width: 120px;
     height: 120px;
   }
@@ -108,13 +107,58 @@
     margin-top: 20px;
     font-size: 20px;
   }
+
+  .social {
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+
+  .social-link-wrapper {
+    text-decoration: none;
+  }
+
+  .table-of-content {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  .table-of-content > li {
+    width: 25%;
+    margin-bottom: 10px;
+  }
+  .table-of-content a {
+    display: inline-block;
+    background-color: #c9ada7;
+    color: #efefef;
+    padding: 3px 5px;
+    border-radius: 3px;
+  }
+
+  .links {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 680px) {
+    .table-of-content > li {
+      width: 50%;
+      margin-bottom: 10px;
+    }
+  }
 </style>
 
 <header>
   <section>
     <div class="avatar-wrapper">
-
       <img
+        use:intersection={{ handleIntersect: (entries) => {
+            if (entries.every((e) => !e.isIntersecting)) {
+              stop();
+            }
+          } }}
         src={avatar}
         class="avatar"
         alt="{name} avatar"
@@ -128,11 +172,27 @@
     <h2>{name}</h2>
     <h3>{tag}</h3>
     <p>{brief}</p>
-    <div>
-      {#each Object.values(links) as link}
-        <a href={link}>{link}</a>
+    <div class="links">
+      {#each Object.entries(links) as link}
+        {#if ['twitter', 'github', 'medium'].includes(link[0])}
+          <a href={link[1]} class="social-link-wrapper">
+            <img class="social" src="{link[0]}.png" alt={link[0]} />
+          </a>
+        {:else}
+          <a href={link[1]} class="social-link-wrapper">
+            <img class="social" src="blog.png" alt={link[0]} />
+          </a>
+        {/if}
       {/each}
     </div>
-    <button>Click me</button>
+    <div>
+      <ul class="table-of-content">
+        {#each ids as { id, title } (id)}
+          <li>
+            <a href="#{id}">{title}</a>
+          </li>
+        {/each}
+      </ul>
+    </div>
   </section>
 </header>

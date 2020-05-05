@@ -15,6 +15,7 @@
 </script>
 
 <svelte:head>
+  <title>{content.title}</title>
   {#each Object.keys(content) as m (m)}
     <meta property={m} content={content[m]} />
   {/each}
