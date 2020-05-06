@@ -26,12 +26,22 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  @media (max-width: 680px) {
+    .container {
+      display: block;
+    }
+  }
+
   .comment {
     border-radius: 4px;
     padding: 15px;
     box-shadow: 0 2px 2px 0 rgba(100, 100, 100, 0.14),
       0 3px 1px -2px rgba(100, 100, 100, 0.12),
       0 1px 5px 0 rgba(100, 100, 100, 0.2);
+  }
+
+  .comment:not(:last-child) {
+    margin-bottom: 10px;
   }
 
   button {
@@ -49,6 +59,12 @@
 
   .btn-wrapper {
     margin-bottom: 10px;
+  }
+
+  .small {
+    padding: 4px;
+    background-color: var(--sub);
+    box-shadow: 0 2px 0 #766b74;
   }
 </style>
 
@@ -73,7 +89,14 @@
               </time>
             </div>
             <p>{d.question}</p>
-            <p>{d.reply}</p>
+            {#if d.reply}
+              <button
+                class="small"
+                type="button"
+                on:click={() => open('detail', d)}>
+                已回覆
+              </button>
+            {/if}
           </div>
         {/each}
       </div>

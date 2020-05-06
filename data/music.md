@@ -33,10 +33,10 @@
 - 嘗試數位編曲
 - 喜歡唱歌但是唱得普普
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MmJZMs6-EM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MmJZMs6-EM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="YouTube：小松 - 眨眼睛 cover"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gHCT8kxCdWc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gHCT8kxCdWc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="YouTube：初音 - メルト"></iframe>
 
 最近則是試著用 Sonic Pi 改編歌曲，像是：
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sQA_07z7LJE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sQA_07z7LJE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="YouTube：星野源 - 家で踊ろう"></iframe>

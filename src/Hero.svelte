@@ -132,7 +132,7 @@
   }
   .table-of-content a {
     display: inline-block;
-    background-color: #c9ada7;
+    background-color: #77605c;
     color: #efefef;
     padding: 3px 5px;
     border-radius: 3px;
@@ -201,6 +201,9 @@
             <a href="#{id}">{title}</a>
           </li>
         {/each}
+        <li>
+          <a href="#qna">來問問題</a>
+        </li>
       </ul>
     </div>
   </section>

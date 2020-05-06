@@ -91,7 +91,6 @@
       {#each items as item (item.title)}
         <Card
           on:cardClick={() => handleCardClick(item)}
-          id={item.id}
           title={item.title}
           description={item.content}
           type={item.type}

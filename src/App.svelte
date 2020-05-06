@@ -10,6 +10,7 @@
   import TravelModal from './TravelModal.svelte';
   import MusicModal from './MusicModal.svelte';
   import FAQModal from './FAQModal.svelte';
+  import DetailModal from './DetailModal.svelte';
   import Transition from './Transition.svelte';
   import FAQ from './FAQ.svelte';
 
@@ -132,7 +133,7 @@
       {/if}
     {/each}
 
-    <Section id="faq" title="FAQ">
+    <Section id="qna" title="來問問題">
       <FAQ />
     </Section>
   </div>
@@ -160,6 +161,8 @@
       <MusicModal meta={$modal.params} />
     {:else if $modal.name === 'faq'}
       <FAQModal />
+    {:else if $modal.name === 'detail'}
+      <DetailModal />
     {/if}
   </Modal>
   <div class="overlay" transition:fade on:click={close} />

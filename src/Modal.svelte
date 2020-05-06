@@ -52,6 +52,10 @@
     .close:hover {
       background-color: rgba(125, 125, 125, 0.2);
     }
+
+    .modal {
+      padding: 15px;
+    }
   }
 </style>
 
