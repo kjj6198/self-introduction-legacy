@@ -88,7 +88,11 @@
                 {new Date(d.createdAt).toLocaleDateString()}
               </time>
             </div>
-            <p>{d.question}</p>
+            {#if d.question.slice(0, 50).length === 50}
+              <p>{d.question.slice(0, 50) + '...'}</p>
+            {:else}
+              <p>{d.question.slice(0, 50)}</p>
+            {/if}
             {#if d.reply}
               <button
                 class="small"
