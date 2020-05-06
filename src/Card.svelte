@@ -63,6 +63,7 @@
   .content {
     padding: 10px;
     padding-bottom: 0;
+    flex-grow: 1;
   }
 
   .footer {
