@@ -14,6 +14,19 @@
     <div id="app">
       <%- html %>
     </div>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-56408806-11"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-56408806-11');
+    </script>
     <script>
       window.__DATA__ = <%- data %>
     </script>
