@@ -52,7 +52,9 @@
     .close:hover {
       background-color: rgba(125, 125, 125, 0.2);
     }
+  }
 
+  @media (max-width: 680px) {
     .modal {
       padding: 15px;
     }
