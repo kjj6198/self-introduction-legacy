@@ -118,7 +118,7 @@
   name={config.meta.name}
   tag={config.meta.tag}
   brief={config.meta.brief}
-  avatar={config.meta.avatar} />
+  avatar={config.meta.cover} />
 
 <main>
   <div class="container">
