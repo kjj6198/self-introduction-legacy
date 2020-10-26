@@ -1,6 +1,6 @@
 ## 一些之前做過 / 正在做的事 {what-i-am-doing}
 
-### [動物之森圖鑑](https://animal-crossing.now.sh)
+### [動物之森圖鑑](https://animal-crossing-info.now.sh)
 
 因為網路上的圖鑑功能不然就是 UI 太爛，不然就是廣告一堆，超級難用，所以自己寫了一個。
 
