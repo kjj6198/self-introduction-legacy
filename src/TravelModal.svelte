@@ -104,9 +104,9 @@
     <div
       class="detail"
       transition:fade={{ duration: 150 }}
-      on:click={() => (selected = '')}>
+      on:click={() => (selected = null)}>
       <img
-        on:click={() => (selected = '')}
+        on:click={() => (selected = null)}
         in:receive={{ key: selected }}
         out:send={{ key: selected }}
         src={selected}
